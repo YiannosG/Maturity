@@ -17,5 +17,25 @@ namespace Maturity
             public int DiscretionaryBonus { get; set; }
             public decimal UpliftPerecentage { get; set; }
         }
+
+        public class PolicyValue
+        {
+            public string PolicyNumber { get; set; }
+            public decimal Value { get; set; }
+        }
+
+        public enum PolicyType
+        {
+            A = 'A',
+            B = 'B',
+            C = 'C'
+        }
+
+        public enum ManagementFee
+        {
+            A = 3,
+            B = 5,
+            C = 7
+        }
     }
 }
