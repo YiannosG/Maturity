@@ -1,0 +1,12 @@
+Reads a CSV file entered on execution.
+  First select the folder where the CSV file exists.
+  All files of the folder will be listed, followed by any files that have the CSV extension.
+  User needs to type the filename of the CSV file.
+    On non-existent file, the user will be notified, and the program exits.
+    Following the entering of the CSV file name, the main flow of the program begins.
+The CSV file is processed amd all the policies are displayed.
+Internally, each policy is stored in its own object, and a temporary list of them is created in memory.
+After each line is printed, the actual maturity value of each policy is calculated and stored.
+At the bottom of the list, there is a message prompting the user to comply. After he does, an XML file is generated, in the same
+directory, containing the policy numbers along with their maturity values.
+The file is named "MaturityValues.xml"
