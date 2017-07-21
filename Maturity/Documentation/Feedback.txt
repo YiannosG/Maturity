@@ -1,0 +1,16 @@
+﻿It’s all written in a C coding style.  There is a single class for code and a number of data classes which are effectively just C structs.  There is no OO / inheritance demonstrated.
+
+ 
+
+The code class is broken up a bit into methods but not enough – I had to scroll up and down quite a bit to follow what was going on.  A couple of the things which made me scratch my head a bit:
+
+    The code to extract the data from the CSV file was unnecessarily complicated with its use of arrays, row counters and column counters.
+    Instead of defining a class to contain the calculated results (a suitable PolicyValue class is defined but never used) 2 parallel collections are used.  The first contains the policy numbers, the second the calculated maturity values.  This can be a valid solution, but not one you’d usually select given a choice.
+
+ 
+
+On the plus side the calculations are correct.
+
+ 
+
+There are no unit tests included in the final solution.  There is a unit test project in the GitHub repo, but it doesn’t yet include any tests
